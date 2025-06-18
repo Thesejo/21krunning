@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21KRunning - Tu compañero de entrenamiento</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Pantalla de Inicio -->
+    <div id="splash-screen">
+        <div class="splash-content">
+            <img src="img/21krunning-logo.png" alt="21KRunning Logo" class="splash-logo">
+            <h1 class="splash-title">21KRunning</h1>
+            <p class="splash-subtitle">Tu compañero de entrenamiento profesional</p>
+            <div class="splash-loader"></div>
+        </div>
+    </div>
+
+    <!-- Aplicación Principal -->
+    <div id="app-container" class="hidden">
+        <!-- Cabecera -->
+        <header class="app-header">
+            <div class="header-content">
+                <img src="img/21krunning-logo.png" alt="21KRunning Logo" class="header-logo">
+                <div class="header-titles">
+                    <h1>21KRunning</h1>
+                    <p>Conectando corredores</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Menú Principal -->
+        <nav id="main-menu" class="main-menu"></nav>
+
+        <!-- Contenido Dinámico -->
+        <main id="app-content">
+            <section id="profile-section" class="content-section hidden"></section>
+            <section id="running-section" class="content-section"></section>
+            <section id="multiplayer-section" class="content-section hidden"></section>
+            <section id="about-section" class="content-section hidden"></section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <p>© 2025 21KRunning Technologies | Todos los derechos reservados</p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/splash.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/running.js"></script>
+    <script src="js/multiplayer.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/socket.js"></script>
+</body>
+</html>
